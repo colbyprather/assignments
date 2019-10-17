@@ -1,0 +1,18 @@
+h1 {
+    color: green;
+    font-family: Georgia;
+    text-align: center
+}
+
+h2 {
+    font-family: Georgia;
+    text-align: center
+}
+
+p {
+    margin: 25px
+}
+
+.underline {
+    text-decoration: none
+}

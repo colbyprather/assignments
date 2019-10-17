@@ -1,0 +1,42 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "L M R1"
+    "L M R2";
+    height: 100%;
+    width: 100%;
+}
+
+ .leftBox {
+     grid-area: L;
+    background-color: red;
+}
+
+.middleBox {
+    grid-area: M;
+    background-color: blue;
+}
+
+.rightTop {
+    grid-area: R1;
+    background-color: green;
+}
+
+.rightBottom {
+    grid-area: R2;
+    background-color: brown;
+}
+
+ 
+
+
+
+/* 1fr is one fraction of the page */
+/* 1/-1 makes it take the full length of the page */

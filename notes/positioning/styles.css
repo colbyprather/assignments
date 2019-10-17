@@ -1,0 +1,14 @@
+/* position static is the default */
+/*position relative moves the box in any postion you want it top:, bottom:, Left:, Right:, then how many px, use z-index to make it the one on top of the other box*/
+/* position absolute stays at the postion of the window/contanter you asign it to no matter how big or small you make the window */
+/* position fixed relative only to the window and will stay in the position you give it even if you scrol up or down */
+#box {
+    background-color: blue
+}
+
+div {
+    background-color: black;
+    height: 100px;
+    margin: 5px;
+
+}

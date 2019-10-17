@@ -1,0 +1,383 @@
+* {
+    background-color: grey;
+    font-size: 0
+}
+
+#franceFlag {
+    display: inline-block;
+    height: 300px;
+    width: 500px;
+
+}
+
+#franceBlue {
+    display: inline-block;
+    background-color: blue;
+    height: 100%;
+    width: 30%;
+
+}
+
+#franceWhite {
+    display: inline-block;
+    background-color: white;
+    height: 100%;
+    width: 30%;
+
+}
+
+#franceRed {
+    display: inline-block;
+    background-color: red;
+    height: 100%;
+    width: 30%
+
+}
+
+#germanyFlag {
+    height: 300px;
+    width: 500px;
+    margin: 20px 10px
+}
+
+#germanyBlack {
+    background-color: black;
+    height: 30%;
+    width: 100%
+}
+
+#germanyRed {
+    background-color: red;
+    height: 30%;
+    width: 100%
+}
+
+#germanyYellow {
+    background-color: #ffdb58;
+    height: 30%;
+    width: 100%;
+}
+
+#mdgFlag {
+    height: 300px;
+    width: 600px;
+    margin: 20px 10px
+}
+
+#mdgWhite {
+    display: inline-block;
+    background-color: white;
+    height: 300px;
+    width: 200px
+}
+
+#mdgRed {
+    background-color: red;
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    top: 648px;
+    left: 218px;
+    bottom: 60%;
+
+
+}
+
+#mdgGreen {
+    display: inline-block;
+    background-color: green;
+    height: 150px;
+    width: 400px;
+}
+
+
+#switFlag {
+    height: 600px;
+    width: 600px;
+    margin: 20px 10px
+}
+
+#switRed {
+    background-color: red;
+    height: 600px;
+    width: 600px
+}
+
+#switWhiteOne {
+    background-color: white;
+    height: 400px;
+    width: 150px;
+    position: relative;
+    top: 100px;
+    left: 225px;
+
+}
+
+#switWhiteTwo {
+    background-color: white;
+    height: 150px;
+    width: 400px;
+    position: relative;
+    bottom: 175px;
+    left: 100px;
+    z-index: 1;
+}
+
+
+
+
+#swedenBlue {
+    background-color: blue;
+    height: 400px;
+    width: 600px;
+}
+
+#swedenYellowOne {
+    background-color: #ffdb58;
+    height: 400px;
+    width: 100px;
+    position: relative;
+    left: 175px
+
+}
+
+#swedenYellowTwo {
+    background-color: #ffdb58;
+    height: 100px;
+    width: 600px;
+    position: relative;
+    bottom: 250px
+}
+
+
+#gambiaFlag {
+    height: 300px;
+    width: 400px;
+    margin: 20px 10px
+}
+
+#gambiaRed {
+    background-color: red;
+    height: 100px;
+    width: 400px;
+
+}
+
+#gambiaWhiteOne {
+    background-color: white;
+    height: 10px;
+    width: 400px;
+}
+
+#gambiaBlue {
+    background-color: blue;
+    height: 50px;
+    width: 400px;
+}
+
+#gambiaWhiteTwo {
+    background-color: white;
+    height: 10px;
+    width: 400px;
+}
+
+#gambiaGreen {
+    background-color: green;
+    height: 100px;
+    width: 400px
+}
+
+
+#tongaFlag {
+    background-color: red;
+    height: 300px;
+    width: 500px;
+}
+
+#tongaWhite {
+    background-color: white;
+    height: 150px;
+    width: 200px;
+}
+
+#tongaRedOne {
+    background-color: red;
+    height: 100px;
+    width: 35px;
+    position: relative;
+    top: 25px;
+    left: 80px;
+}
+
+#tongaRedTwo {
+    background-color: red;
+    height: 35px;
+    width: 100px;
+    position: relative;  
+    bottom: 43px;
+    left: 47px  
+}
+
+
+#japanFlag {
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    margin: 20px 10px
+}
+
+#japanCircle {
+    height: 175px;
+    width: 175px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 110px
+}
+
+
+#greeceFlag {
+    background-color: white;
+    height: 900px;
+    width: 1100px;
+}
+
+#greeceBox {
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+}
+
+#greeceBoxWhiteOne {
+    background-color: white;
+    height: 500px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+}
+
+#greeceBoxWhiteTwo {
+    background-color: white;
+    height: 100px;
+    width: 500px;
+    position: relative;
+    bottom: 300px
+}
+
+#greeceBlueOne {
+    background-color: blue;
+    height: 100px;
+    width: 600px;
+    position: relative;
+    bottom: 500px;
+    left: 500px
+}
+
+#greeceBlueTwo {
+    background-color: blue;
+    height: 100px;
+    width: 600px;
+    position: relative;
+    bottom: 400px;
+    left: 500px
+}
+
+#greeceBlueThree {
+    background-color: blue;
+    height: 100px;
+    width: 600px;
+    position: relative;
+    bottom: 300px;
+    left: 500px
+}
+
+#greeceBlueFour {
+    background-color: blue;
+    height: 100px;
+    width: 1100px;
+    position: relative;
+    bottom: 200px
+}
+
+#greeceBlueFive {
+    background-color: blue;
+    height: 100px;
+    width: 1100px;
+    position: relative;
+    bottom: 100px
+}
+
+
+#nigerFlag {
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    margin: 20px 10px
+}
+
+#nigerOrange {
+    background-color: orange;
+    height: 100px;
+    width: 500px;
+}
+
+#nigerCircle  {
+    background-color: orange;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 215px;
+    top: 3995px
+
+}
+
+#nigerGreen {
+    background-color: green;
+    height: 100px;
+    width: 500px;
+    position: relative;
+    top: 100px
+}
+
+
+#malFlag {
+    background-color: red;
+    height: 400px;
+    width: 600px;
+}
+
+#malBox {
+    background-color: green;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    left: 100px;
+    top: 100px
+}
+
+#malCircleOne {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 125px;
+    top: 25px
+}
+
+#malCircleTwo {
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 25px;
+    z-index: 1;
+}

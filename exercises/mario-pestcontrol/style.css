@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+}
+
+
+.picturs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+
+}
+
+ul {
+    display: inline;
+}
+
+li {
+   
+    display: inline;
+}
+.goom {
+   max-width: 100%;
+   height: 200px
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    justify-self: center;
+    /* grid-row: 4/1; */
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: red;
+    text-align: center;
+    display: flex;
+    justify-content: space-between
+}

@@ -1,0 +1,45 @@
+.box {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+@media (min-width: 800px) and (max-width: 1200px){
+    .box {
+        height: 500px;
+        width: 500px;
+    }
+}
+@media (max-width: 800px) , (min-width: 1200px){
+    .box{
+        background-color: green;
+    }
+}
+/* @media (min-width: 800px){
+    .box {
+        background-color: green;
+    }
+}
+@media (min-width: 1200px){
+    .box {
+        background-color: purple;
+    }
+    img {
+        display: none;
+    }
+} */
+/* @media (min-width: 800px){
+    .box {
+        width: 500px;
+    }
+}
+@media (min-width: 1200px){
+    .box {
+        width: 900px;
+    }
+} */
+/*  
+    min-width - from px amount and above. Place from low value to high. 
+    max-width - from px amount and below. place from high value to low.
+    and
+    ,
+*/
