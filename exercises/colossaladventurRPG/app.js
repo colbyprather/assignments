@@ -6,32 +6,46 @@ function Enemy (name, hp, ap){
     this.hp = hp;
     this.ap = ap;
 }
-var special = ['gold', 'silver', 'candy']
+var special = ["Red Shell", "Gold Coin", "Mushroom"]
 var inventory = []
-const count = new Enemy('The Count', 53, 12)
-const dracula = new Enemy('Dracula', 100, 20)
-const nosferatu = new Enemy('Nosferatu', 80, 3)
-const enemies = [count, dracula, nosferatu]
+const Bowser = new Enemy('Bowser', 350, 12)
+const KingBoo = new Enemy('King Boo', 250, 20)
+const Waluigi = new Enemy('Waluigi', 150, 3)
+const enemies = [Bowser, KingBoo, Waluigi]
 function Hero (name, hp, ap){
     this.name = name;
     this.hp = hp;
     this.ap = ap;
 }
-const hero = new Hero('Superman', 500, 2)
-console.log('Hello how are you, welcome to the game')
+console.log('It is me Mario help me save Princess Peach')
 const name = ask.question('What is your name? ')
-console.log(`Welcome to the game ${name}, Your journey is about to begin`)
+const hero = new Hero(name, 700, 2)
+console.log(`Welcome ${name}, right this way`)
 while(isAlive && !hasWon){
-    let choice = ask.keyIn('Would you like to (w) Walk, (i) Check Inventory, or (q) Leave Game? ', {limit: 'wiq'} )
+    let choice = ask.keyIn('Would you like to (w) Walk, (i) Check Inventory, (s) use Red Shell, (m) use Mushroom or (q) Leave Game? ', {limit: 'wismq'} )
     if(choice === 'w'){
         walk()
     }else if (choice === 'i'){
        printInventory()
+    }else if(choice === "s"){
+        if(inventory.find(item => item === "Red Shell") === "Red Shell"){
+            let attack = Math.floor(Math.random()*100)+30;
+            attack += 50;
+            inventory.splice(inventory.indexOf("Red Shell"), 1)
+            console.log(`You've gained an additional 50 attack points from Red Shell`)
+        }
+    }else if(choice === "m"){
+        if(inventory.find(item => item === "Mushroom") === "Mushroom"){
+            hero.hp += 50
+            inventory.splice(inventory.indexOf("Mushroom"), 1)
+            console.log(`You've gained an additional 50 HP from Mushroom`)
+        }
     }else {
         isAlive = false
         console.log('You quit the game')
     }
 }
+
 function walk (){
     let random = Math.floor(Math.random()*4)
     if(random === 3){
@@ -52,14 +66,15 @@ function enemyEncounter(){
         console.log('you quit')
     }
 }
+
 function selectEnemy(){
     let random = Math.floor(Math.random()*enemies.length)
     return enemies[random]
 }
 
-function fight(currEnemy){
+function fight(currEnemy, attack){
+    // let attack = Math.floor(Math.random()*100)+30;
     while(currEnemy.hp > 0 && hero.hp > 0){
-        let attack = Math.floor(Math.random()*100)+30;
         currEnemy.hp -= attack 
         console.log(`The ${currEnemy.name} has ${currEnemy.hp} HP left`)
         let enemieAttack = Math.floor(Math.random()*100)+30;
@@ -72,6 +87,27 @@ function fight(currEnemy){
         console.log(`Your new HP is ${hero.hp}`)
         inventory.push(special[Math.floor(Math.random()*special.length)])
         console.log(inventory)
+        // let use = ask.keyIn('Would you like to use (s) Red Shell, (m) use Mushroom for next battle?', {limit: 'sm'} )
+        // if(use === "s"){
+        //     if(inventory.find(item => item === "Red Shell") === "Red Shell"){
+        //         attack += 50
+        //         inventory.splice(inventory.indexOf("Red Shell"), 1)
+        //         console.log(`You've gained an additional 50 attack points from Red Shell`)
+        // }else if(use === "m"){
+        //     if(inventory.find(item => item === "Mushroom") === "Mushroom"){
+        //         hero.hp += 50
+        //         inventory.splice(inventory.indexOf("Mushroom"), 1)
+        //         console.log(`You've gained an additional 50 HP from Mushroom`)
+        // }
+        for( var i = 0; i < enemies.length; i++){
+            if (enemies[i] === currEnemy){
+                enemies.splice(i, 1)
+            }
+        }
+        if(enemies.length === 0){
+            isAlive = false
+            console.log(`You have saved Princess Peach thank you for your help ${hero.name}!`)
+        }
     }else{
         isAlive = false
         console.log(`You have been kill by ${currEnemy.name}!`)
@@ -86,6 +122,8 @@ function run(currEnemy, hero){
         console.log('You have succesfully ran from the monster')
     }
 }
+
 function printInventory(){
-    console.log(inventory)
+    console.log(`${hero.name}: ${hero.hp} HP,
+    Inventory: ${inventory}`)
 }
