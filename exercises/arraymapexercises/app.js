@@ -19,7 +19,7 @@
 
 // function capitalizeNames(people){
 //   return people.map((person) => {
-//     return person[0].toUpperCase() + first.slice(1).toLowerCase()
+//     return person[0].toUpperCase() + person.slice(1).toLowerCase()
 //   })
 // }
 
@@ -91,11 +91,11 @@
 // ]))
 
 
-// function readyToPutInTheDOM(people){
-//   return people.map((person) => {
-//     return `<h1>${person.name}</h1><h2>${person.age}</h2>`
-//   })
-// }
+function readyToPutInTheDOM(people){
+  return people.map((person) => {
+    return `<h1>${person.name}</h1><h2>${person.age}</h2>`
+  })
+}
 // console.log(readyToPutInTheDOM([
 //     {
 //         name: "Angelina Jolie",
