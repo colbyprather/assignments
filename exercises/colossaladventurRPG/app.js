@@ -87,18 +87,7 @@ function fight(currEnemy, attack){
         console.log(`Your new HP is ${hero.hp}`)
         inventory.push(special[Math.floor(Math.random()*special.length)])
         console.log(inventory)
-        // let use = ask.keyIn('Would you like to use (s) Red Shell, (m) use Mushroom for next battle?', {limit: 'sm'} )
-        // if(use === "s"){
-        //     if(inventory.find(item => item === "Red Shell") === "Red Shell"){
-        //         attack += 50
-        //         inventory.splice(inventory.indexOf("Red Shell"), 1)
-        //         console.log(`You've gained an additional 50 attack points from Red Shell`)
-        // }else if(use === "m"){
-        //     if(inventory.find(item => item === "Mushroom") === "Mushroom"){
-        //         hero.hp += 50
-        //         inventory.splice(inventory.indexOf("Mushroom"), 1)
-        //         console.log(`You've gained an additional 50 HP from Mushroom`)
-        // }
+       
         for( var i = 0; i < enemies.length; i++){
             if (enemies[i] === currEnemy){
                 enemies.splice(i, 1)
