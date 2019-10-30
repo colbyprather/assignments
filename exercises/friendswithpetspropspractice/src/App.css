@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin:10px 10px 10px 10px;
+}
+
+.friends {
+    text-align: center;
+    background-color: blue;
+}
+.pets {
+    background-color: red;
+}

@@ -4,7 +4,7 @@ const Pet = (props) => {
     let {name, breed} = props
 
     return(
-        <div>
+        <div className='pets'>
             <h2>{name}</h2>
             <h4>{breed}</h4>
         </div>

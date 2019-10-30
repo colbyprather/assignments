@@ -1,10 +1,13 @@
 import React from 'react'
 import Friendslist from './FriendList'
+import './App.css'
 
 const App = () => {
-    <div>
-        <Friendslist />
-    </div>
+    return(
+        <div>
+            <Friendslist />
+        </div>
+    )
 }
 
 export default App

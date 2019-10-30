@@ -1,22 +1,13 @@
-import React, {Component} from 'react'
-import Square from './Square'
+import React from 'react'
+import Mixer from './Mixer'
 
-
-class App extends Component {
-    constructor() {
-        super()
-        this.state = {
-            colors:["blue", "red", "green", "white"]
-        }
-    }
-}
 
 function App() {
-    const squareBox = 
+    
     
     return(
         <div>
-            {squareBox}
+            <Mixer />
         </div>
     )
 }

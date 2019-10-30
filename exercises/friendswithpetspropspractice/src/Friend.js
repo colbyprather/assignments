@@ -4,10 +4,10 @@ const Friend = (props) => {
     let {name, age, pets} = props
     
     return(
-        <div>
+        <div className='friends'>
             <h2>{name}</h2>
             <h4>{age}</h4>
-            <p>{pets}</p>
+            <h5>{pets}</h5>
         </div>
     )
 }
