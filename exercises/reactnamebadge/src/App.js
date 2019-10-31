@@ -1,10 +1,10 @@
 import React from 'react';
-import SuperHeroList from './SuperHeroList'
+import Box from './Box'
 
 const App = () => {
     return (
         <div>
-            <SuperHeroList />
+            
         </div>
     );
 };

@@ -1,12 +1,18 @@
 import React from 'react'
 
-function Hero({name, catchPhrase, image}){
+function Hero(props){
+    let {name, show, imageName, catchPhrase} = props
+    const onClick = () => {
+        alert(catchPhrase)
+    }
     return (
-        <div>
+        <div onClick={onClick}>
             <h1>{name}</h1>
-            <img src={image} alt={name}/>
+            <h3>{show}</h3>
+
+            <img src={imageName} alt={name} />
         </div>
     )
 }
 
-export default Hero
+export default Hero 
