@@ -1,13 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Info from './Info'
 
-class Container extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
-}
+const Container = (props) => {
+    const infoMap = props.badgeArr.map((badge, i) => <Info 
+                                            key={i + badge.fName}
+                                            fName={badge.fName}
+                                            lName={badge.lName}
+                                            email={badge.email}
+                                            birth={badge.birth}
+                                            phone={badge.phone}
+                                            food={badge.food}
+                                            you={badge.you}
+                                            />)
+    return (
+        <div>
+            {infoMap}
+        </div>
+    );
+};
 
 export default Container;

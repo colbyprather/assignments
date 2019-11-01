@@ -1,0 +1,57 @@
+.form {
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 10px;
+    margin: 0 10% 0 10%;
+}
+
+.form2 {
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 10px;
+    margin: 30px 10% 0 10%;
+}
+
+.firstBoxs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    margin: 20px 50px 0 50px;
+}
+
+.firstBoxs>input{
+    border: black 2px solid;
+}
+
+.textBox {
+    resize: none;
+    margin: 10px 10px 10px 10px;
+    /* width: 80%; */
+}
+
+.badge {
+    border-radius: 5px;
+    color: white;
+    background-color: grey;
+    font-size: 3vw;
+    text-align: left;
+
+}
+
+.textInBox {
+    display: flex;
+}
+
+.smallText {
+    margin-left: 10px
+}
+textarea{
+    border: black 2px solid;
+}
+
+button {
+    border: black 2px solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
