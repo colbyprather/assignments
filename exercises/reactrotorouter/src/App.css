@@ -1,0 +1,31 @@
+.nav {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: white;
+    margin: 0px -25px 0 8px;
+    text-align: center;
+}
+
+.link {
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mainDiv {
+    width: 100%
+}
+
+.footers {
+    background-color: red;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}

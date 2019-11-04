@@ -29,11 +29,15 @@ class Box extends Component {
         food,
         you,
         }
-        this.setState(prev => {
-            return{
-                badgeArr: [...prev.badgeArr, newBadge]
-            }
-        })
+        if(fName.length >= 3 && lName.length >= 3 && email.length >= 3 && birth.length >= 3 && phone.length >= 3 && food.length >= 3 && you.length >= 3){
+            this.setState(prev => {
+                return{
+                    badgeArr: [...prev.badgeArr, newBadge]
+                }
+            })
+        } else {
+            return 'must be three charactors'
+        }
         console.log(newBadge)
     }
 

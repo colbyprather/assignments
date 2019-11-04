@@ -2,6 +2,8 @@ import React from 'react';
 
 const Info = (props) => {
     let {fName, lName, email, birth, phone, food, you} = props
+
+    
     return (
         <div className='form2'>
             <div className='badge'>Badge:</div>

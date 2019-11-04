@@ -1,0 +1,52 @@
+header {
+    height: 100px;
+    position: relative;
+    top: 0;
+    background-color: #36454F
+}
+
+.imageHeader {
+    height: 100%;
+    float: left;
+}
+
+.headerText {
+    color: red;
+    position: relative;
+    top: 35%;
+    left: 3%;
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+    grid-gap: 50px;
+    margin-top: 50px;
+    
+}
+
+.pics {
+    height: 300px;
+    width: 100%
+
+}
+
+.mainBox {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.blueBox {
+    opacity: 0.5;
+    background-color: blue;
+    height: 50px;
+    position: relative;
+    bottom: 53px;
+}
+
+.textPic {
+    position: relative;
+    bottom: 107px;
+    text-align: center;
+}
