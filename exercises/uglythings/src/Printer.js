@@ -5,9 +5,9 @@ import {outProvider} from './MainProvider'
 const Printer = (props) => {
     return (
         <div>
-            <h1>{props.title.value}</h1>
-            <p>{props.discription.value}</p>
-            <img src={props.image.value} alt="ugly"/>
+            <h1>{props.title}</h1>
+            <p>{props.discription}</p>
+            <img src={props.image} alt="ugly"/>
             <button>delete</button>
         </div>
     );

@@ -11,7 +11,15 @@ class MainProvider extends Component {
             image: '',
             todos: []
         }
+        console.log(this.state.todos)
     }
+
+    handleSubmit = () => {
+        this.setState(prev => {
+            return {todos: {...prev.state}}
+        })
+    } 
+    
     render() {
         return (
             <div>

@@ -3,7 +3,10 @@ import Printer from './Printer'
 import {outProvider} from './MainProvider'
 
 
+
+
 class Container extends Component {
+
     
 
     handleSubmit = () => {
@@ -12,11 +15,13 @@ class Container extends Component {
         })
     }
 
-    render() {
-        const printerMap = this.state.todos.map((todo, i) => <Printer key={i+ todo.title}
-                                                                    title={todo.title}
-                                                                    discription={todo.discription}
-                                                                    image={todo.image}
+    handleChange = e => {
+        this.setState({[e.target.name]: e.target.value})
+    }
+
+    render(props) {
+        const printerMap = props.todos.map((todo, i) => <Printer key={i+ todo.title}
+                                                                    {...todo}
                                                                     />)
         return (
             <div>

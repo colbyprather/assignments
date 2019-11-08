@@ -1,21 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from './Container'
+import {outProvider} from './MainProvider'
+// import "./App.css"
 
-class App extends Component {
-    constructor(){
-        super()
+const App = () => {
+    return (
+        <div>
+            <Container />
+        </div>
+    );
+};
 
-        this.state = {
-            todos: []
-        }
-    }
-    render() {
-        return (
-            <div>
-                <Container />
-            </div>
-        );
-    }
-}
-
-export default App;
+export default outProvider(App);

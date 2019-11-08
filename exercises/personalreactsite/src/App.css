@@ -1,0 +1,9 @@
+.nav {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pokeBall {
+    height: 50px;
+}
