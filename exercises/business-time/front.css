@@ -30,21 +30,20 @@ ul {
     padding: 14px 16px;
     font-size: 5mm;
     font-family: Arial, Helvetica, sans-serif;
-
- }
+}
  
- li {
+li {
     padding: 9px;
     margin: 5px;
     border-color: white;
     text-align: center;
- }
- li a {
-     color: white;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
-    }
+}
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
  li a:hover {
     background-color: lightgray;
     color: white;

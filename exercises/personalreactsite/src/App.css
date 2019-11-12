@@ -1,9 +1,73 @@
 .nav {
-    background-color: red;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: rgb(184, 3, 3);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* margin: -8%; */
+    text-align: center;
+    height: 75px;
+}
+
+Link:hover {
+    background-color: lightgray;
+    color: white;
+}
+Link {
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+    color: white
+}
+
+
+.dropdown {
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn {
+    display: grid;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+}
+
+.dropdown-content :hover {
+    background-color: lightgray;
+}
+
+.dropdown-content link:hover {
+    background-color: lightgray;
+} 
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .pokeBall {
     height: 50px;
+    position: relative;
+    right: 38%;
+    top: 17%;
+    text-align: left;
 }

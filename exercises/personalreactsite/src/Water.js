@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Water = () => {
-    return (
-        <div>
-            <h1>
-                water type
-            </h1>
-        </div>
-    );
-};
+class Water extends Component {
+    
+    render() {
+        return (
+            <div>
+                <h1>
+                    water type
+                </h1>
+            </div>
+        );
+    }
+}
 
 export default Water;
