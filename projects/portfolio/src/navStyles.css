@@ -1,0 +1,37 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: red; */
+    height: 100px;
+    margin: -8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(165, 156, 156);
+    background-color: white;
+}
+
+.navLinks {
+    display: flex;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 9px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border-color: #000;
+    transition: border 0s ease-out; */
+}
+
+.navLinkOne:hover {
+    text-decoration: underline;
+}
+
+.navLinkTwo:hover {
+    text-decoration: underline;
+}
+
+.navName {
+    text-align: right;
+    padding-top: 16px;
+    padding-right: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}

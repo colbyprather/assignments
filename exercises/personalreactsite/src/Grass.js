@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {withProvider} from './MainProvider'
+import Pokemon from './Pokemon'
 
-const Grass = () => {
-    return (
-        <div>
-            <h1>grass</h1>
-        </div>
-    );
-};
+class Grass extends Component {
+    componentDidMount(){
+        this.props.getGrassType()
+    }
+    render() {
+        const pokemon = this.props.grass.map((poke, i) => <Pokemon key={i + poke.pokemon.name} name={poke.pokemon.name} url={poke.pokemon.url} />)
+        return (
+            <div>
+                {pokemon}
+            </div>
+        );
+    }
+}
 
-export default Grass;
+export default withProvider(Grass);

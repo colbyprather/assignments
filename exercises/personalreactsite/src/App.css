@@ -4,9 +4,10 @@
     background-color: rgb(184, 3, 3);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* margin: -8%; */
+    margin: -8px;
     text-align: center;
     height: 75px;
+    
 }
 
 Link:hover {
@@ -30,7 +31,7 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropButton {
     display: grid;
     font-size: 16px;
     border: none;
@@ -42,23 +43,33 @@ a:-webkit-any-link {
     margin: 0;
 }
 
+.dropdown:hover {
+    background-color: black;
+    color: white
+}
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:black;
+    background-color:rgb(184, 3, 3);
     color:black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px black;
     z-index: 1;
+    
+}
+
+.dropdown-content Link{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content :hover {
     background-color: lightgray;
 }
-
-.dropdown-content link:hover {
-    background-color: lightgray;
-} 
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -70,4 +81,55 @@ a:-webkit-any-link {
     right: 38%;
     top: 17%;
     text-align: left;
+}
+/* 
+.pokeCard {
+    text-align: center;
+    background-color: rgb(227, 227, 7);
+    border-radius: 25px;
+    width: 250px;
+    height: 350px;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+.fireGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+} */
+
+.pokeCard {
+    background-color: rgb(10, 177, 228);
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+.waterGrid {
+background-color: rgb(227, 227, 7);
+width: 250px;
+height: 350px;
+text-align: center;
+border-radius: 24px;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+input.searchBox {
+    margin-top: 26px;
 }

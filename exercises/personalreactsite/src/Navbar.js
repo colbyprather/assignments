@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import SearchBar from './SearchBar'
 
 const Navbar = () => {
     return (
@@ -13,7 +14,7 @@ const Navbar = () => {
                         <Link to="/fire">Fire</Link>
                     </div>
             </div>
-            <Link to='/search'>Search</Link>
+            <SearchBar className='searchBar'/>
         </div>
     );
 };
