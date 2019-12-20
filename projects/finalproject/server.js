@@ -1,19 +1,35 @@
-const express = require('express')
-const app = express()
-const mongoose = require('mongoose')
-const PORT = 8000
+const express = require("express");
+const app = express();
+require("dotenv").config();
+const morgan = require("morgan");
+const mongoose = require("mongoose");
+const expressJwt = require("express-jwt");
+const PORT = process.env.PORT || 8000;
 
-app.use(express.json())
+app.use(morgan("dev"));
+app.use(express.json());
+app.use("/api", expressJwt({secret: process.env.SECRET}));
 
-app.use("/profileItems", require('./routes/profileRouter'))
+mongoose.set('useCreateIndex', true);
+mongoose.connect('mongodb://localhost:27017/profiledb', { useUnifiedTopology: true, useNewUrlParser: true })
+    .then(()=> {
+        console.log('connected to mongodb')
+    })
+    .catch(err => {
+        console.log(err)
+    })
 
-mongoose.connect('mongodb://localhost:27017/profiledb',
-{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => console.log(`Connected to the DB`))
-.catch(() => console.log(err))
+app.use("/profile", require('./routes/profileRouter'));
+app.use("/api/profile", require('./routes/protectedRouter'));
+app.use("/auth", require("./routes/auth"));
+
+app.use((err, req, res, next) => {
+    console.error(err);
+    if (err.name === "UnauthorizedError") {
+        res.status(err.status);
+    }
+    return res.send({ message: err.message });
+});
 
 app.listen(PORT, () => {
     console.log(`FocuseTalent server is running on port ${PORT}`)

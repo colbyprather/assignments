@@ -13,7 +13,7 @@ class Details extends Component {
 
     componentDidMount() {
         let {_id} = this.props.match.params
-        axios.get(`/profileItems/${_id}`).then(res => {
+        axios.get(`/profile/${_id}`).then(res => {
             this.setState({storage: res.data})
         })
     }
@@ -22,7 +22,7 @@ class Details extends Component {
         let {name} = this.state.storage
         return (
             <div>
-            <button onClick={this.props.history.goBack}>Back</button>
+            <button className="backButton" onClick={this.props.history.goBack}>Back</button>
                 <h1>{name}</h1>
             </div>
         )

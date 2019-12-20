@@ -20,13 +20,18 @@ const profileSchema = new Schema({
     shoe: String,
     birthday: String,
     gender: String,
-    phone: Number,
+    phone: String,
     email: String,
     ethnicity: String,
     carYear: String,
     carMake: String,
     carModel: String,
     skills: String,
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+        required: true
+    },
 })
 
-module.exports = mongoose.model("profile", profileSchema)
+module.exports = mongoose.model("Profile", profileSchema)

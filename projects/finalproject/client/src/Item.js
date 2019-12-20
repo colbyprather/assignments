@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withProvider } from './MainProvider';
 import {Link} from 'react-router-dom';
+import './profilesItemsStyles.css'
 
 
 class Item extends Component {
@@ -16,7 +17,7 @@ class Item extends Component {
         return (
             <div className="productinfo">
                 <Link className='productName' to={`/details/${_id}`}>
-                    <h2>{name}</h2>
+                    <h2 className="nameItem">{name}</h2>
                 </Link>
             </div>
         )

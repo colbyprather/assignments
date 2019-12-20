@@ -8,9 +8,10 @@ class TeenMale extends Component {
     }
 
     render() {
-        const mappedTeenMale = this.props.teenMale.map((person, i) => <Item key={i + person.name} name={person.name} _id={person._id}/>)
+        const mappedTeenMale = this.props.teenMale.map((person, i) => <Item key={i + person.name} name={person.name} gender={person.gender}  _id={person._id}/>)
         return (
             <div>
+                <h1 style={{textAlign: "center"}}>Teen Male</h1>
                 {mappedTeenMale}
             </div>
         )
