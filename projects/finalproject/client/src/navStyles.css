@@ -9,7 +9,7 @@
 }
 
 .dropdown:hover {
-    color: lightblue
+    color: lightgray;
 }
 
 .dropdown {
@@ -49,7 +49,7 @@ text-decoration: none;
 }
 
 .dropdown-content h2:hover {
-color: lightblue;
+color: lightgray;
 }
 
 .dropdown-content a {

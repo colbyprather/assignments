@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withProvider } from "../MainProvider"
 import { Link } from "react-router-dom";
-import '../navStyles.css';
+import '../loginStyles.css';
 
 class LoginForm extends Component {
     constructor() {
@@ -39,28 +39,32 @@ class LoginForm extends Component {
 
     render() {
         return (
-            <div className="form-wrapper">
-                <form onSubmit={this.handleSubmit}>
-                    <h3>Log In</h3>
-                    <input
-                        onChange={this.handleChange}
-                        value={this.state.username}
-                        name="username"
-                        type="text"
-                        placeholder="username"/>
-                    <input
-                        onChange={this.handleChange}
-                        value={this.state.password}
-                        name="password"
-                        type="password"
-                        placeholder="password"/>
-                    <button type="submit">Log In</button>
-                    <button><Link className='navAbout' to='/signup'>Sign Up</Link></button>
+            <div>
+                <form className="form-wrapper" onSubmit={this.handleSubmit}>
+                    <h3 className="logTitle">Log In</h3>
+                    {
+                        this.state.errorMessage &&
+                        <p style={{color: "red", textAlign: "center"}}>{this.state.errorMessage}</p>
+                    }
+                    <div className="boxHolder">
+                        <input
+                            className="username"
+                            onChange={this.handleChange}
+                            value={this.state.username}
+                            name="username"
+                            type="text"
+                            placeholder="username"/>
+                        <input
+                            className="password"
+                            onChange={this.handleChange}
+                            value={this.state.password}
+                            name="password"
+                            type="password"
+                            placeholder="password"/>
+                        <button className="loginButton" type="submit">Log In</button>
+                        <button className="signupButton"><Link className='signupButton' to='/signup'>Sign Up</Link></button>
+                    </div>
                 </form>
-                {
-                    this.state.errorMessage &&
-                    <p style={{color: "red"}}>{this.state.errorMessage}</p>
-                }
             </div>
         )
     }

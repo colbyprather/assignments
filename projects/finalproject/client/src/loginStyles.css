@@ -1,0 +1,41 @@
+.boxHolder {
+    margin-left: 40%;
+    background-color: black;
+    padding: 5px 5px 5px 5px;
+    height: 300px;
+    width: 300px;
+    display: grid;
+}
+
+.username {
+    text-align: center;
+    margin: auto;
+    height: 20px;
+    width: 150px;
+}
+
+.password {
+    text-align: center;
+    margin: auto;
+    height: 20px;
+    width: 150px;
+}
+
+.loginButton {
+    height: 20px;
+    width: 50px;
+    margin: auto;
+}
+
+.signupButton {
+    text-decoration: none;
+    color: black;
+    height: 20px;
+    width: 60px;
+    margin: auto;
+}
+
+.logTitle {
+    text-align: center;
+    font-size: 30px;
+}
