@@ -13,15 +13,15 @@ class Home extends Component {
         const width = '300px', height='150px';
         const Container = styled.div`
         border: 1px solid black;
-        margin: 10px 10px 10px 15%;
+        margin: 10px 10px 10px 8%;
         position: relative;
         overflow: hidden;
-        width: ${width};
+        width: 500px;
         `;
         const Children  = styled.div`
-        width: ${width};
+        width: 500px;
         position: relative;
-        height: 175px;
+        height: 275px;
         `;
         const Arrow = styled.div`
         text-shadow: 1px 1px 1px #fff;
@@ -29,7 +29,7 @@ class Home extends Component {
         line-height: ${height};
         text-align: center;
         position: absolute;
-        top: 0;
+        top: 60px;
         width: 10%;
         font-size: 3em;
         cursor: pointer;
@@ -44,9 +44,11 @@ class Home extends Component {
         user-select: none;
         `;
         const Dots = styled.span`
-        text-align: center;
-        width: ${width};
+        width: 54px;
         z-index: 100;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         `;
         const CarouselUI = ({ position, total, handleClick, children }) => (
         <Container>

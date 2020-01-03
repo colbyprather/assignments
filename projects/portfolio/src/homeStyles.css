@@ -1,7 +1,8 @@
 .textTop {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px
+    font-size: 50px;
+    color: lightgrey
 }
 .layout {
     display: grid;
@@ -10,8 +11,9 @@
 }
 
 .boxHolder {
+    border-radius: 10%;
     height: 400px;
-    width: 450px;
+    width: 600px;
     background-color: lightgrey;
     margin: auto
 }
@@ -30,9 +32,11 @@
     border: 1px solid black;
     border-radius: 10%;
     padding: 0 10px 0 10px;
-    margin: 300px 0px 0px 200px;
-    align-items: center;
-    align-self: center;
+    text-align: center;
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
