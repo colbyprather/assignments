@@ -12,7 +12,10 @@ const Nav = () => {
                 <a href={"https://github.com/colbyprather"} target="_blank" rel="noopener noreferrer"><img style={{height: "40px", width: "40px",padding: "20px 0 20px 20px" }} src="https://s18955.pcdn.co/wp-content/uploads/2018/02/github.png" alt="GitHub"></img></a>
             </div>
             <div className='navName'>
-                <h3>Colby Prather // Web Developer</h3>
+                <div>
+                    <h3 className="name">Colby Prather // Web Developer</h3>
+                    <h4 className="number">8 0 1 . 8 8 4 . 3 3 2 5</h4>
+                </div>
             </div>
         </div>
     );

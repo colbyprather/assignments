@@ -6,6 +6,10 @@ import styled, { css } from 'styled-components';
 import Vtrade from "./vtrade.jpg"
 import Vtrade2 from "./vtrade2.jpg"
 import Vtrade3 from "./vtrade3.jpg"
+import Slick from "./slickkicks.jpg"
+import Slick2 from "./slickkicks2.jpg"
+import Slick3 from "./slickkicks3.jpg"
+
 
 class Home extends Component {
     
@@ -76,30 +80,41 @@ class Home extends Component {
                         <Slide right>
                         <div>
                             <img className="images" src={Vtrade} alt="screenshot"></img>
-                            {/* <h1>Slide 1</h1>
-                            <p>Slide Description</p> */}
                         </div>
                         </Slide>
                         <Slide right>
                         <div>
                             <img className="images" src={Vtrade2} alt="screenshot"></img>
-                            {/* <h1>Slide 2</h1>
-                            <p>Slide Description</p> */}
                         </div>
                         </Slide>
                         <Slide right>
                         <div>
                             <img className="images" src={Vtrade3} alt="screenshot"></img>
-                            {/* <h1>Slide 3</h1>
-                            <p>Slide Description</p> */}
                         </div>
                         </Slide>
                     </Carousel>
-                        {/* <img className="images" src={Vtrade} alt="screenshot"></img> */}
                         <a className="viewButton" href={"https://vtrade.herokuapp.com/"} target="_blank" rel="noopener noreferrer">View</a>
+                        {/* <p>This was a group projet we made while in Vschool. It's just made so you can go on and make a post to sell your old outdoor gear you no longer need.</p> */}
                     </div>
                     <div className="boxHolder">
-                        hello
+                    <Carousel>
+                        <Slide right>
+                        <div>
+                            <img className="images" src={Slick} alt="screenshot"></img>
+                        </div>
+                        </Slide>
+                        <Slide right>
+                        <div>
+                            <img className="images" src={Slick2} alt="screenshot"></img>
+                        </div>
+                        </Slide>
+                        <Slide right>
+                        <div>
+                            <img className="images" src={Slick3} alt="screenshot"></img>
+                        </div>
+                        </Slide>
+                    </Carousel>
+                    <a className="viewButton" href={"http://slickkicks.surge.sh/"} target="_blank" rel="noopener noreferrer">View</a>
                     </div>
                 </div>
             </div>

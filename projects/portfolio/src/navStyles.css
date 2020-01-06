@@ -29,8 +29,18 @@
 
 .navName {
     text-align: right;
-    padding-top: 16px;
+    /* padding-top: 16px; */
     padding-right: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
+}
+
+.name {
+    padding-top: 15px;
+}
+
+.number {
+    margin-top: -10px;
+    color: #666666;
+    font-family: monospace;
 }
