@@ -14,18 +14,20 @@ import Slick3 from "./slickkicks3.jpg"
 class Home extends Component {
     
     render () {
-        const width = '300px', height='150px';
+        const height='150px';
         const Container = styled.div`
         border: 1px solid black;
         margin: 10px 10px 10px 8%;
         position: relative;
         overflow: hidden;
-        width: 500px;
+        // width: 500px;
+        width: 85%;
         `;
         const Children  = styled.div`
-        width: 500px;
-        position: relative;
-        height: 275px;
+        // width: 500px;
+        // width: 100%;
+        // position: relative;
+        // height: 275px;
         `;
         const Arrow = styled.div`
         text-shadow: 1px 1px 1px #fff;
@@ -33,7 +35,6 @@ class Home extends Component {
         line-height: ${height};
         text-align: center;
         position: absolute;
-        top: 60px;
         width: 10%;
         font-size: 3em;
         cursor: pointer;
@@ -48,7 +49,6 @@ class Home extends Component {
         user-select: none;
         `;
         const Dots = styled.span`
-        width: 54px;
         z-index: 100;
         display: block;
         margin-left: auto;
@@ -56,12 +56,12 @@ class Home extends Component {
         `;
         const CarouselUI = ({ position, total, handleClick, children }) => (
         <Container>
-            <Children>
+            <Children className="childrenBox">
             {children}
-            <Arrow onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
-            <Arrow right onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
+            <Arrow className="arrows" onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
+            <Arrow right className="arrows" onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
             </Children>
-            <Dots>
+            <Dots className="dots">
             {Array(...Array(total)).map( (val, index) =>
                 <Dot key={index} onClick={handleClick} data-position={index}>
                 {index === position ? '● ' : '○ ' }

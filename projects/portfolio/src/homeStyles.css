@@ -36,4 +36,53 @@
     margin-right: auto;
 }
 
+.childrenBox {
+    width: 100%;
+    position: relative;
+    height: 275px;
+}
 
+.arrows {
+    top: 60px;
+}
+
+.dots {
+    width: 54px;
+}
+@media (max-width: 1220px) {
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 50px;
+}
+}
+@media (max-width: 620px) {
+    .boxHolder {
+        width: 300px;
+    }
+    .childrenBox {
+        height: 140px;
+    }
+    .arrows {
+        top: -5px;
+    }
+    .dots {
+        width: 25%;
+    }
+}
+
+@media (max-width: 390px) {
+    .boxHolder {
+        width: 250px;
+    }
+    .childrenBox {
+        height: 115px;
+    }
+    .arrows {
+        top: -15px;
+    }
+    .dots {
+        width: 30%;
+    }
+}
