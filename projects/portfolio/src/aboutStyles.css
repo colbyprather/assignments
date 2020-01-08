@@ -3,26 +3,28 @@ body {
     color: white;
 }
 
+.gridLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin: 50px 10% 0 10%;
+}
+
 .picOfMe {
-    float: left;
     width: 100%;
 }
 
 .picContainer {
-    margin: 20px 0 0 100px;
-    float: left;
-    width: 600px;
-    height: 300px;
+    width: 100%;
 }
 
 .textContainer {
     text-align: center;
     background-color: white;
-    width: 600px;
+    width: 100%;
     height: auto;
     color: black;
     float: right;
-    margin: 20px 100px 0 0;
 }
 
 .textFont {
@@ -41,4 +43,12 @@ body {
     color: black;
     border: 1px solid black;
     padding: 5px 5px 5px 5px;
+}
+
+
+@media (max-width: 1000px) {
+    .gridLayout {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

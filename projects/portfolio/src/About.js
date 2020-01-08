@@ -3,7 +3,7 @@ import './aboutStyles.css';
 
 const About = () => {
     return (
-        <div>
+        <div className="gridLayout">
             <div className='picContainer'>
                 <img className='picOfMe' src="http://www.focustalentmgmt.com/uploads/9/4/0/4/9404157/colby-prather-main_orig.jpg" alt='Me'></img>
             </div>
