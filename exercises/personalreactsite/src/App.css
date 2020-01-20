@@ -7,7 +7,7 @@
     margin: -8px;
     text-align: center;
     height: 75px;
-    
+    margin-bottom: 15px;
 }
 
 Link:hover {
@@ -82,51 +82,36 @@ a:-webkit-any-link {
     top: 17%;
     text-align: left;
 }
-/* 
-.pokeCard {
-    text-align: center;
-    background-color: rgb(227, 227, 7);
-    border-radius: 25px;
-    width: 250px;
-    height: 350px;
-}
-
-.mainGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    
-}
-
-.fireGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-
-} */
 
 .pokeCard {
-    background-color: rgb(10, 177, 228);
+    background-color: lightgray;
     text-align: center;
-    width: 200px;
-    height: 300px;
-    margin: auto;
-    margin-top: 25px;
+    width: 230px;
+    height: 340px;
     border-radius: 25px;
+    margin-left: 10px;
 }
 
 .waterGrid {
 background-color: rgb(227, 227, 7);
 width: 250px;
 height: 350px;
-text-align: center;
 border-radius: 24px;
+margin: auto;
+}
+
+.pokemonimg {
+    border: 2px solid silver;
+    background-color: white;
+    margin-top: 10px;
+    height: 150px;
+    width: 200px
 }
 
 .mainGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 

@@ -10,9 +10,7 @@ class Fire extends Component {
         const pokemon = this.props.fire.map((poke, i) => <Pokemon key={i + poke.pokemon.name} name={poke.pokemon.name} url={poke.pokemon.url}/>)
         return (
             <div className='mainGrid'>
-                <div className='fireGrid'>
                 {pokemon}
-                </div>
             </div>
         );
     }

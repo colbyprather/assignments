@@ -23,13 +23,14 @@ class Pokemon extends Component {
             let mySprite = sprites
             backImg = mySprite.hasOwnProperty('back_default') ? sprites.back_default : 'no_image'
         }        
+        console.log(this.state.pokeInfo.types)
         return (
             <div >
                 <div className='waterGrid'>
-                    <div className='pokeCard'>
-                        <img src={backImg} alt="none"/>
+                    <div className='pokeCard' style={{backgroundColor: this.state.pokeInfo.types === "grass" ? "green" : "red"}}> 
                         <div>{name}</div>
-                        <p>{height}</p>
+                        <img className='pokemonimg' src={backImg} alt="none"/>
+                        <p>Height: {height}</p>
                         <p>{base_experience}</p>
                     </div>
                 </div>

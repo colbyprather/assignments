@@ -24,17 +24,13 @@ class MainProvider extends Component {
     getGrassType = () => {
         axios.get('https://pokeapi.co/api/v2/type/12/').then(res => {
             this.setState({grass:res.data.pokemon})
-            // console.log(res.data.pokemon)
         })
-        // console.log(this.state.grass)
     }
     
     getFireType = () => {
         axios.get('https://pokeapi.co/api/v2/type/10/').then(res => {
             this.setState({fire:res.data.pokemon})
-            // console.log(res.data.pokemon)
         })
-        // console.log(this.state.fire)
     }
     
     getWaterType = () => {
@@ -44,7 +40,6 @@ class MainProvider extends Component {
     }
 
     getInfo = () => {
-        // console.log(this.props)
         axios.get(`${this.props}`).then(res => { 
             this.setState({searchInfo:res.data})
         })

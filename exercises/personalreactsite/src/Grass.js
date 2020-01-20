@@ -9,7 +9,7 @@ class Grass extends Component {
     render() {
         const pokemon = this.props.grass.map((poke, i) => <Pokemon key={i + poke.pokemon.name} name={poke.pokemon.name} url={poke.pokemon.url} />)
         return (
-            <div>
+            <div className='mainGrid'>
                 {pokemon}
             </div>
         );
