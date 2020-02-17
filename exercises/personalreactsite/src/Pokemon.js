@@ -5,9 +5,7 @@ import {withProvider} from './MainProvider'
 class Pokemon extends Component {
     constructor() {
         super()
-        this.state = {
-            pokeInfo: {},
-        }
+        this.state = {pokeInfo:null}
     }
 
     componentDidMount() {
@@ -16,25 +14,25 @@ class Pokemon extends Component {
         })
     }
 
-    render() {
-        let {name, height, base_experience, sprites} = this.state.pokeInfo
+    generateImage() {
         let backImg;
-        if (sprites){
-            let mySprite = sprites
-            backImg = mySprite.hasOwnProperty('back_default') ? sprites.back_default : 'no_image'
-        }        
-        console.log(this.state.pokeInfo.types)
+        let mySprite = this.state.pokeInfo.sprites
+        backImg = mySprite.hasOwnProperty('back_default') ? this.state.pokeInfo.sprites.back_default : 'no_image'
+        return backImg
+    }
+
+    render() {
+        console.log(this.state)
         return (
-            <div >
+            !this.state.pokeInfo ? null : 
                 <div className='waterGrid'>
-                    <div className='pokeCard' style={{backgroundColor: this.state.pokeInfo.types === "grass" ? "green" : "red"}}> 
-                        <div>{name}</div>
-                        <img className='pokemonimg' src={backImg} alt="none"/>
-                        <p>Height: {height}</p>
-                        <p>{base_experience}</p>
+                    <div className='pokeCard' style={{backgroundColor: this.state.pokeInfo.types.some().type.name === "grass" ? "green" : "red"}}> 
+                        <div>{this.state.pokeInfo.name}</div>
+                        <img className='pokemonimg' src={this.generateImage()} alt="none"/>
+                        <p>Height: {this.state.pokeInfo.height}</p>
+                        <p>{this.state.pokeInfo.base_experience}</p>
                     </div>
                 </div>
-            </div>
         );
     }
 }
